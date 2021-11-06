@@ -1,0 +1,122 @@
+
+Write your notes in this file.
+
+Flask
+Does not contain user management 
+Database connectivity - No MVC by Default 
+LightWeight
+
+Django 
+Pre-Built WebApp Framework 
+Model View Controller Architecture setup simply from "django-admin startproject myDjangoSite"
+mysite/
+    manage.py
+    mysite/
+        __init__.py
+        settings.py
+        urls.py
+        asgi.py
+        wsgi.py
+
+Where as with flask, nothing is really created. 
+We create the pages from scratch
+
+
+
+if __name__ == "__main__":
+https://docs.python.org/3/reference/toplevel_components.html#complete-python-programs 
+https://docs.python.org/3/reference/import.html?highlight=__name__#__name__
+
+In a brief nutshell it is a requirement in order to kick start the python compiler, establish required resources
+and recognize that a program is being requested to run.
+
+
+You typically see this at the bottom and the actual functions and methods above. 
+This is because methods and functions must be defined before they are run. 
+
+If you find this at the top of the code then it will execute immediatly without your methods being defined and established
+
+Example from our S3 Flask App
+@app.route("/download/<filename>", methods=['GET'])
+def download(filename):
+    if request.method == 'GET':
+        output = download_file(filename, BUCKET)
+
+        return send_file(output, as_attachment=True)
+
+
+if __name__ == '__main__':
+     app.run(host='0.0.0.0', port=8080, debug=True)
+
+
+If main was run before def download, the application would have no recognition of def download. 
+So similarly to variables being instantiated before execution or implementation into methods and functions
+
+
+
+__________ Adding a static Video to Site____________
+
+
+<body>
+  <h2>Serving video files from Flask template</h2>
+  <video width="800" height="600" controls>
+    <source src={{ url_for('static', filename="BlockEditing.mp4") }} type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  
+  
+  <video width="800" height="600" controls>
+    <source src={{ url_for('static', filename="lofi.mp4") }} type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</body>
+
+
+https://stackoverflow.com/questions/55961665/flask-wont-play-a-video-in-the-html/55963265
+
+
+
+_______BS_____________
+
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+___________________________________Old HTML Base____________________________________
+
+<p> Its October - Get Ready for Holloween!</p>
+        <p> Did you know if you create a python file with just "import this" and run the file it will show you some Python Poetry </p>
+        <p>{{content}}</p> 
+        <p>{{r}}</p>
+        
+        
+        
+         
+        <table style="background-color:#DBF9FC">
+            <tr>
+            <th>Name</th>
+            <th>Job Title</th> 
+            <th>Email address</th>
+            </tr>
+            <tr>
+            <td>Anna Fitzgerald</td>
+            <td>Staff Writer</td>
+            <td>example@company.com</td>
+            </tr>
+            <tr>
+            <td>John Smith</td>
+            <td>Marketing Manager</td>
+            <td>example2@company.com</td>
+            </tr>
+            <tr>
+            <td>Zendaya Grace</td>
+            <td>CEO</td>
+            <td>example2@company.com</td>
+            </tr>
+        </table>
