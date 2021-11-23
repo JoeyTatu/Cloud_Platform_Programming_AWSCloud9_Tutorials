@@ -12,6 +12,7 @@ BUCKET = "joeysbucket1234"
 
 @app.route('/')
 def entry_point():
+    #return 'Hello World!'
     return storage()
 
 
