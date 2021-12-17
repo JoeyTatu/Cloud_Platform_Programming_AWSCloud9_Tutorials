@@ -1,0 +1,27 @@
+2021-12-03 19:16:48    INFO    createEnvironment is starting.
+2021-12-03 19:16:50    INFO    Using elasticbeanstalk-us-east-1-876930312471 as Amazon S3 storage bucket for environment data.
+2021-12-03 19:17:14    INFO    Created security group named: sg-0e9f86dda5e9b2990
+2021-12-03 19:17:29    INFO    Environment health has transitioned to Pending. Initialization in progress (running for 30 seconds). There are no instances.
+2021-12-03 19:17:29    INFO    Created load balancer named: awseb-e-q-AWSEBLoa-13SFMX5VFTVB3
+2021-12-03 19:17:29    INFO    Created security group named: awseb-e-q5yecmgqgf-stack-AWSEBSecurityGroup-ELNF44HXSKH7
+2021-12-03 19:17:29    INFO    Created Auto Scaling launch configuration named: awseb-e-q5yecmgqgf-stack-AWSEBAutoScalingLaunchConfiguration-MWIHFHOM5WI1
+2021-12-03 19:18:29    INFO    Added instance [i-0878c03c297b8f057] to your environment.
+2021-12-03 19:18:29    WARN    Environment health has transitioned from Pending to Warning. Initialization in progress (running for 90 seconds). Unable to assume role "arn:aws:iam::876930312471:role/aws-elasticbeanstalk-service-role". Verify that the role exists and is configured correctly.
+2021-12-03 19:18:34    INFO    Created Auto Scaling group named: awseb-e-q5yecmgqgf-stack-AWSEBAutoScalingGroup-N63OBKIVRI8W
+2021-12-03 19:18:34    INFO    Waiting for EC2 instances to launch. This may take a few minutes.
+2021-12-03 19:18:34    INFO    Created Auto Scaling group policy named: arn:aws:autoscaling:us-east-1:876930312471:scalingPolicy:13e1799d-d071-4314-978e-4f25728b6909:autoScalingGroupName/awseb-e-q5yecmgqgf-stack-AWSEBAutoScalingGroup-N63OBKIVRI8W:policyName/awseb-e-q5yecmgqgf-stack-AWSEBAutoScalingScaleDownPolicy-1244G814TLLCQ
+2021-12-03 19:18:34    INFO    Created Auto Scaling group policy named: arn:aws:autoscaling:us-east-1:876930312471:scalingPolicy:9981a4b5-1fb6-4ccc-879a-adf0c0d4c209:autoScalingGroupName/awseb-e-q5yecmgqgf-stack-AWSEBAutoScalingGroup-N63OBKIVRI8W:policyName/awseb-e-q5yecmgqgf-stack-AWSEBAutoScalingScaleUpPolicy-19U5ZL8AUP5YB
+2021-12-03 19:18:49    INFO    Created CloudWatch alarm named: awseb-e-q5yecmgqgf-stack-AWSEBCloudwatchAlarmHigh-1NHGI2F6U5ET2
+2021-12-03 19:18:49    INFO    Created CloudWatch alarm named: awseb-e-q5yecmgqgf-stack-AWSEBCloudwatchAlarmLow-17LIKJBGTSPKO
+2021-12-03 19:18:56    INFO    Instance deployment successfully generated a 'Procfile'.
+2021-12-03 19:18:58    INFO    Instance deployment completed successfully.
+2021-12-03 19:19:29    WARN    Environment health has transitioned from Warning to Severe. Initialization completed 22 seconds ago and took 2 minutes. Unable to assume role "arn:aws:iam::876930312471:role/aws-elasticbeanstalk-service-role". Verify that the role exists and is configured correctly. ELB health is failing or not available for all instances.
+2021-12-03 19:20:03    INFO    Successfully launched environment: flask-tutorial1-env
+2021-12-03 19:48:18    INFO    requestEnvironmentInfo is starting.
+2021-12-03 19:48:20    INFO    Instance deployment completed successfully.
+2021-12-03 19:48:25    INFO    Pulled logs for environment instances.
+2021-12-03 19:52:38    INFO    requestEnvironmentInfo is starting.
+2021-12-03 19:52:40    INFO    Instance deployment completed successfully.
+2021-12-03 19:52:45    INFO    Pulled logs for environment instances.
+2021-12-03 20:03:18    INFO    Deleted log fragments for this environment.
+2021-12-03 20:07:39    INFO    Deleted log fragments for this environment.
